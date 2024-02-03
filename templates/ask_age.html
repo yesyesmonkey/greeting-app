@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Say Hello</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <img src="https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png">
+    <br>
+    <form action="{{ url_for("ask_age", name=name) }}", method="post">
+        {% for message in get_flashed_messages() %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    <br>
+        <input type="number" name="age_input" placeholder="Your age.">
+        <br>
+        <input type="submit" value="age" id="submit">
+    </form>
+</body>
+</html>

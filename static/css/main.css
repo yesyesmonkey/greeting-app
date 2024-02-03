@@ -39,3 +39,12 @@ input:focus {
 #greet:hover {
     background-color: MediumVioletRed;
 }
+
+.info_container {
+    height: 100vh;
+    display: flex;
+    font-size: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}

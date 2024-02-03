@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Say Hello</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="info_container">
+        <p class="Info">
+            You are {{ name }},Your age is {{ age }}, Your occupation is {{ occupation }}
+        </p>
+    </div>
+</body>
+</html>
